@@ -1,0 +1,131 @@
+/* General settings */
+:root {
+  --dark-gray: #333333;
+  --light-gray: #dddddd;
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Layout */
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 90px;
+  color: white;
+  font-weight: 700;
+  font-size: 40px;
+  background-color: var(--dark-gray);
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  height: 40px;
+  background-color: var(--dark-gray);
+  color: white;
+  font-weight: 700;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  flex-grow: 1;
+  display: flex;
+}
+
+.nav {
+  height: 100%;
+  width: 250px;
+  background-color: var(--light-gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.main-content {
+  height: 100%;
+  background-color: #eeeeee;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  gap: 30px;
+}
+
+.todolist {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.default-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  width: 100%;
+  gap: 5px;
+}
+
+.default-projects button,
+.projects button {
+  width: 150px;
+  height: 30px;
+}
+
+.todolist {
+  width: 100%;
+  align-items: center;
+}
+
+.todolist button,
+.new-task-btn {
+  width: 80%;
+  height: 50px;
+}
+
+.projects > h2, button {
+  color: var(--dark-gray);
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.new-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.todo {
+  display: flex;
+  gap: 15px;
+  border: 1px solid black;
+  width: 80%;
+  height: 50px;
+  padding-left: 50px;
+  align-items: center;
+}
+
+#checkbox {
+  width: 1.5rem;
+  height: 1.5rem;
+}
